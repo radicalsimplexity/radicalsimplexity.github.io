@@ -573,8 +573,10 @@ section { padding: var(--section-pad); }
 .footer-nav { display: flex; flex-wrap: wrap; gap: .35rem; }
 .footer-nav a { color: rgba(255,255,255,.4); font-size: .85rem; padding: .3rem .7rem; border-radius: var(--r-sm); transition: var(--tr); }
 .footer-nav a:hover { color: var(--amber-light); background: rgba(255,255,255,.05); }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.07); padding-top: 1.1rem; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.07); padding-top: 1.1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
 .footer-bottom p { color: rgba(255,255,255,.28); font-size: .8rem; }
+.visitor-count { display: flex; align-items: center; gap: .4rem; color: rgba(255,255,255,.25); font-size: .78rem; }
+.visitor-count i { font-size: .7rem; color: var(--amber); opacity: .5; }
 
 /* ===== 15. RESPONSIVE ===== */
 @media (max-width: 1024px) {
