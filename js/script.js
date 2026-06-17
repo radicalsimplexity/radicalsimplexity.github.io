@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   mobileClose.addEventListener('click', closeMenu);
   mobileOverlay.addEventListener('click', closeMenu);
 
-  // Close on mobile nav link click
-  mobileMenu.querySelectorAll('a').forEach(link => {
+  // Close on internal nav link click (not PDF links)
+  mobileMenu.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
 
@@ -160,8 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .filter(Boolean)
         .join('\n');
 
-      // Replace with your actual WhatsApp number (no + or spaces)
-      const waNumber = '6500000000';
+      const waNumber = '6587588329';
       const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(lines)}`;
 
       window.open(waUrl, '_blank', 'noopener,noreferrer');

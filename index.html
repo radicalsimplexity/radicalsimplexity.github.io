@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lester | Private Mathematics Tutor Singapore</title>
-  <meta name="description" content="Private Mathematics Tutor with 20+ years experience in Singapore. Specialising in Secondary and JC H2 Mathematics. Building confident, independent problem-solvers." />
+  <meta name="description" content="Private Mathematics Tutor with 20+ years experience in Singapore. Secondary, JC H1/H2 and university mathematics. Patient, conceptual, and personalised." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
 
-  <!-- AOS Animation -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -29,11 +28,14 @@
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#philosophy">Approach</a></li>
         <li><a href="#subjects">Subjects</a></li>
         <li><a href="#results">Results</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#qualifications">Background</a></li>
+        <li>
+          <a href="Input/Final_Lester_Eng_Math_Tutor.pdf" target="_blank" class="nav-resume">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+        </li>
         <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -45,23 +47,19 @@
   <!-- Mobile Menu -->
   <div class="mobile-overlay" id="mobileOverlay"></div>
   <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose">
-      <i class="fas fa-times"></i>
-    </button>
+    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#philosophy">Approach</a></li>
       <li><a href="#subjects">Subjects</a></li>
       <li><a href="#results">Results</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#qualifications">Background</a></li>
+      <li><a href="Input/Final_Lester_Eng_Math_Tutor.pdf" target="_blank"><i class="fas fa-file-alt"></i> Resume PDF</a></li>
       <li><a href="#contact" class="mobile-cta">Get in Touch</a></li>
     </ul>
   </div>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
-    <!-- Floating math symbols -->
     <div class="math-bg" aria-hidden="true">
       <span class="ms ms-1">∫</span>
       <span class="ms ms-2">∑</span>
@@ -76,7 +74,6 @@
     </div>
 
     <div class="hero-container">
-      <!-- Text side -->
       <div class="hero-text">
         <div class="hero-badge">
           <i class="fas fa-map-marker-alt"></i> Singapore · Private Tutor
@@ -108,16 +105,27 @@
         </div>
 
         <div class="hero-btns">
-          <a href="#contact" class="btn-primary">
+          <a href="https://wa.me/6587588329" class="btn-primary" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp"></i> Let's Talk
           </a>
           <a href="#about" class="btn-ghost">
             Learn More <i class="fas fa-arrow-right"></i>
           </a>
         </div>
+
+        <div class="hero-social">
+          <a href="https://www.instagram.com/radicalsimplexitymath/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/6587588329" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:radicalsimplexity@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
 
-      <!-- Photo side -->
       <div class="hero-photo-wrap">
         <div class="photo-stage">
           <div class="photo-ring ring-outer"></div>
@@ -126,14 +134,13 @@
           <div class="photo-circle">
             <img src="Input/Professional Edited Photo.png" alt="Lester — Private Mathematics Tutor" />
           </div>
-          <!-- Floating info badges -->
           <div class="info-badge badge-tl">
             <i class="fas fa-graduation-cap"></i>
             <span>NUS · Georgia Tech</span>
           </div>
           <div class="info-badge badge-br">
-            <i class="fas fa-star"></i>
-            <span>A/B Grades Typical</span>
+            <i class="fas fa-chart-line"></i>
+            <span>Significant Grade Improvements</span>
           </div>
         </div>
       </div>
@@ -141,60 +148,66 @@
 
     <a href="#about" class="scroll-hint" aria-label="Scroll down">
       <span class="scroll-hint-text">Scroll to explore</span>
-      <div class="scroll-arrow">
-        <i class="fas fa-chevron-down"></i>
-      </div>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
     </a>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="about section-light" id="about">
+  <!-- ===== WHY LESTER (replaces About + Philosophy) ===== -->
+  <section class="why-lester section-light" id="about">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">About Me</span>
-        <h2>A Tutor Who Genuinely Cares</h2>
-        <p>I believe every student can excel at mathematics — with the right guidance and genuine encouragement.</p>
+        <span class="section-tag">About</span>
+        <h2>Why Choose Lester?</h2>
+        <p>Patient, conceptual, and genuinely invested in every student's growth</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-content" data-aos="fade-right" data-aos-delay="100">
+      <!-- 3 illustrated portraits -->
+      <div class="portrait-row">
+        <div class="portrait-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="Input/Caring and Encouraging.png" alt="Caring and Encouraging" />
+        </div>
+        <div class="portrait-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="Input/Friendly and Approachable.png" alt="Friendly and Approachable" />
+        </div>
+        <div class="portrait-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="Input/Trustworthy and Professional.png" alt="Trustworthy and Professional" />
+        </div>
+      </div>
+
+      <!-- Bio + approach list + experience timeline -->
+      <div class="why-bottom">
+        <div class="why-bio" data-aos="fade-right" data-aos-delay="100">
           <p class="lead-text">
-            My tutoring style is built on patience, strong conceptual clarity, and the belief that students learn best when they truly understand the <em>"why"</em> behind mathematics.
+            I help students move beyond memorising steps to genuinely
+            <em>understanding</em> mathematics — and that shift makes all the
+            difference in exams and beyond.
           </p>
           <p>
-            Rather than drilling methods, I help students become independent problem-solvers who can tackle unfamiliar exam questions with confidence. I identify gaps quickly through on-the-fly questions, then adapt my explanations in real time to meet each student exactly where they are.
-          </p>
-          <p>
-            I also connect maths to real-world applications — engineering, data, finance, everyday decisions — because students are more engaged and motivated when they see that mathematics is meaningful and alive beyond the classroom.
+            With more than 20 years of tutoring experience across Secondary, JC and early university mathematics, I combine diagnostic questioning, original custom problems, and real-world applications drawn from my industry background in engineering, finance and data analytics — to build confident, independent problem-solvers.
           </p>
 
-          <div class="about-pillars">
-            <div class="pillar-item" data-aos="fade-up" data-aos-delay="150">
-              <div class="pillar-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-              <div class="pillar-text">
-                <strong>In-Person &amp; Online</strong>
-                <p>Fully adapted to both settings with clear, engaging delivery</p>
-              </div>
-            </div>
-            <div class="pillar-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="pillar-icon"><i class="fas fa-pencil-ruler"></i></div>
-              <div class="pillar-text">
-                <strong>Custom Problems</strong>
-                <p>Original questions designed for your specific learning gaps</p>
-              </div>
-            </div>
-            <div class="pillar-item" data-aos="fade-up" data-aos-delay="250">
-              <div class="pillar-icon"><i class="fas fa-heart"></i></div>
-              <div class="pillar-text">
-                <strong>Patient &amp; Approachable</strong>
-                <p>A safe space where students never feel judged for asking questions</p>
-              </div>
-            </div>
-          </div>
+          <ul class="approach-list">
+            <li>
+              <div class="al-icon"><i class="fas fa-fish"></i></div>
+              <div><strong>Teach to fish</strong> — build understanding that transfers to new and unfamiliar questions</div>
+            </li>
+            <li>
+              <div class="al-icon"><i class="fas fa-search"></i></div>
+              <div><strong>Diagnose first</strong> — find the exact gap through targeted questions, then address it in real time</div>
+            </li>
+            <li>
+              <div class="al-icon"><i class="fas fa-pen-nib"></i></div>
+              <div><strong>Custom problems</strong> — original questions designed for your specific misconceptions</div>
+            </li>
+            <li>
+              <div class="al-icon"><i class="fas fa-globe-asia"></i></div>
+              <div><strong>Real-world links</strong> — connect maths to engineering, data, finance and everyday decisions</div>
+            </li>
+          </ul>
         </div>
 
-        <div class="about-timeline" data-aos="fade-left" data-aos-delay="100">
-          <h3 class="timeline-title">Experience</h3>
+        <div class="why-timeline" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="tl-heading">Experience</h3>
           <div class="timeline">
             <div class="tl-item tl-current">
               <div class="tl-dot"><i class="fas fa-chalkboard-teacher"></i></div>
@@ -224,8 +237,8 @@
               <div class="tl-dot"><i class="fas fa-school"></i></div>
               <div class="tl-body">
                 <span class="tl-period">2017</span>
-                <strong>Tutor — AGrader</strong>
-                <p>Structured tuition centre instruction</p>
+                <strong>Tutor — AGrader Learning Centre</strong>
+                <p>Secondary &amp; JC Mathematics</p>
               </div>
             </div>
           </div>
@@ -234,70 +247,22 @@
     </div>
   </section>
 
-  <!-- ===== PHILOSOPHY ===== -->
-  <section class="philosophy section-dark" id="philosophy">
-    <div class="container">
-      <div class="section-header light" data-aos="fade-up">
-        <span class="section-tag">Teaching Approach</span>
-        <h2>The Way I Teach</h2>
-        <p>Four principles that guide every lesson</p>
-      </div>
-
-      <div class="phil-grid">
-        <div class="phil-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="phil-icon"><i class="fas fa-fish"></i></div>
-          <h3>Teach to Fish</h3>
-          <p>
-            My goal is not just to solve today's problem — it's to equip students with the understanding and mental flexibility to solve tomorrow's. I emphasise deep conceptual mastery, not rote memorisation.
-          </p>
-        </div>
-
-        <div class="phil-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="phil-icon"><i class="fas fa-search"></i></div>
-          <h3>Diagnose First</h3>
-          <p>
-            I identify learning gaps quickly through targeted questions, then adapt my explanation in real time. Once I understand exactly where a student is stuck, I address that gap directly and move forward.
-          </p>
-        </div>
-
-        <div class="phil-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="phil-icon"><i class="fas fa-pen-nib"></i></div>
-          <h3>Custom Questions</h3>
-          <p>
-            I create original problems tailored to each student's specific weaknesses. Standard textbook exercises rarely expose individual misconceptions — targeted custom practice does.
-          </p>
-        </div>
-
-        <div class="phil-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="phil-icon"><i class="fas fa-globe-asia"></i></div>
-          <h3>Real-World Links</h3>
-          <p>
-            I connect maths to engineering, data, finance, and everyday decisions. When students see why maths matters, they become genuinely curious, more engaged, and far more motivated.
-          </p>
-        </div>
-      </div>
-
-      <div class="phil-quote" data-aos="fade-up" data-aos-delay="100">
-        <blockquote>
-          "Mathematics is not a collection of tricks — it is a
-          <span class="q-highlight">logical system</span> that can be
-          understood and truly mastered."
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== SUBJECTS ===== -->
-  <section class="subjects section-light" id="subjects">
+  <section class="subjects section-white" id="subjects">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <span class="section-tag">What I Teach</span>
         <h2>Mathematics at Every Stage</h2>
-        <p>From foundational secondary concepts to advanced JC and university mathematics</p>
+        <p>From O Level foundations to A Level mastery and early university support</p>
+      </div>
+
+      <div class="session-formats" data-aos="fade-up">
+        <span class="sf-tag"><i class="fas fa-user"></i> 1-to-1 Sessions</span>
+        <span class="sf-tag"><i class="fas fa-users"></i> Small Group (2–8 students)</span>
+        <span class="sf-tag"><i class="fas fa-wifi"></i> Online &amp; In-Person</span>
       </div>
 
       <div class="subjects-grid">
-        <!-- Secondary -->
         <div class="subj-card" data-aos="fade-up" data-aos-delay="100">
           <div class="subj-level">Secondary School</div>
           <div class="subj-icon"><i class="fas fa-square-root-alt"></i></div>
@@ -305,16 +270,15 @@
           <ul class="subj-list">
             <li><i class="fas fa-check"></i> Elementary Mathematics</li>
             <li><i class="fas fa-check"></i> Additional Mathematics</li>
-            <li><i class="fas fa-check"></i> Algebra &amp; Geometry</li>
-            <li><i class="fas fa-check"></i> Trigonometry</li>
+            <li><i class="fas fa-check"></i> Algebra, Geometry &amp; Trigonometry</li>
+            <li><i class="fas fa-check"></i> Calculus fundamentals</li>
             <li><i class="fas fa-check"></i> O Level examination prep</li>
           </ul>
           <div class="subj-result">
-            <i class="fas fa-chart-line"></i> Students typically achieve <strong>A grades</strong>
+            <i class="fas fa-chart-line"></i> Students often achieve <strong>A grades</strong>
           </div>
         </div>
 
-        <!-- JC — featured -->
         <div class="subj-card subj-featured" data-aos="fade-up" data-aos-delay="200">
           <div class="subj-badge">Most Requested</div>
           <div class="subj-level">Junior College</div>
@@ -328,11 +292,10 @@
             <li><i class="fas fa-check"></i> Vectors &amp; Complex Numbers</li>
           </ul>
           <div class="subj-result">
-            <i class="fas fa-trophy"></i> Past students typically achieve <strong>A or B</strong>
+            <i class="fas fa-trophy"></i> Significant grade improvements including <strong>E→A &amp; U→B</strong>
           </div>
         </div>
 
-        <!-- University -->
         <div class="subj-card" data-aos="fade-up" data-aos-delay="300">
           <div class="subj-level">University</div>
           <div class="subj-icon"><i class="fas fa-atom"></i></div>
@@ -345,55 +308,59 @@
             <li><i class="fas fa-check"></i> Discrete Mathematics</li>
           </ul>
           <div class="subj-result">
-            <i class="fas fa-graduation-cap"></i> Supported by <strong>Master's-level</strong> background
+            <i class="fas fa-graduation-cap"></i> Backed by <strong>Master's-level</strong> applied mathematics
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== RESULTS ===== -->
-  <section class="results section-warm" id="results">
+  <!-- ===== RESULTS & STUDENT VOICES (merged) ===== -->
+  <section class="results-testi section-dark" id="results">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
+
+      <!-- Results -->
+      <div class="section-header light" data-aos="fade-up">
         <span class="section-tag">Student Outcomes</span>
         <h2>Results That Speak</h2>
-        <p>Academic results matter — but so does the confidence and clarity that students gain along the way</p>
+        <p>Significant grade improvements — and a genuine shift in confidence and mathematical thinking</p>
       </div>
 
       <div class="results-grid">
         <div class="res-card res-hero" data-aos="zoom-in" data-aos-delay="100">
-          <div class="res-big">4 → 21</div>
-          <div class="res-unit">out of 25</div>
-          <p>Score improvement on a specific topic after just <strong>3 lessons</strong></p>
+          <div class="res-grade-row">
+            <span class="res-grade from">E</span>
+            <i class="fas fa-arrow-right res-arrow"></i>
+            <span class="res-grade to">A</span>
+          </div>
+          <p>JC H2 Mathematics<br /><strong>A-Level examinations</strong></p>
         </div>
 
-        <div class="res-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="res-icon"><i class="fas fa-trophy"></i></div>
-          <h3>JC H2 Maths</h3>
-          <p>Past students have typically secured <strong>A or B grades</strong> at the A Level examinations</p>
+        <div class="res-card res-hero" data-aos="zoom-in" data-aos-delay="200">
+          <div class="res-grade-row">
+            <span class="res-grade from">U</span>
+            <i class="fas fa-arrow-right res-arrow"></i>
+            <span class="res-grade to">B</span>
+          </div>
+          <p>JC H2 Mathematics<br /><strong>A-Level examinations</strong></p>
         </div>
 
         <div class="res-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="res-icon"><i class="fas fa-medal"></i></div>
-          <h3>Secondary Maths</h3>
-          <p>Students have often achieved <strong>A grades</strong> in both E Maths and Additional Maths</p>
+          <div class="res-big-num">4 → 21</div>
+          <div class="res-unit">out of 25</div>
+          <p>Score on a single topic after just <strong>3 targeted lessons</strong></p>
         </div>
 
         <div class="res-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="res-icon"><i class="fas fa-seedling"></i></div>
-          <h3>Beyond Grades</h3>
-          <p>Many students show marked improvement in <strong>confidence, motivation,</strong> and genuine love for mathematics</p>
+          <div class="res-icon"><i class="fas fa-medal"></i></div>
+          <h3>Secondary Maths</h3>
+          <p>Students consistently achieve <strong>A grades</strong> in O Level E Maths and Additional Maths</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="testimonials section-dark" id="testimonials">
-    <div class="container">
-      <div class="section-header light" data-aos="fade-up">
-        <span class="section-tag">Student Voices</span>
+      <!-- Divider into testimonials -->
+      <div class="rt-divider" data-aos="fade-up">
+        <span class="section-tag light">Student Voices</span>
         <h2>What My Students Say</h2>
       </div>
 
@@ -403,7 +370,7 @@
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
           <div class="testi-quote">"</div>
-          <p>He creates his own questions tailored to my learning — something I've never experienced with any other tutor. Every session feels designed specifically for me, not just pulled from a textbook.</p>
+          <p>He creates his own questions tailored to my learning — something I've never experienced with any other tutor. Every session feels designed specifically for me.</p>
           <div class="testi-author">
             <div class="testi-avatar">S</div>
             <div class="testi-info">
@@ -418,7 +385,7 @@
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
           <div class="testi-quote">"</div>
-          <p>He always tries his best to make sure I get the concept, and even brings real-world examples into it. I finally understand <em>why</em> we learn this — not just how to do it. That made a huge difference.</p>
+          <p>I appreciate how after teaching content, he gives real-life examples on the spot to test my understanding. I really enjoy it — I finally understand <em>why</em> we learn this, not just how.</p>
           <div class="testi-author">
             <div class="testi-avatar">J</div>
             <div class="testi-info">
@@ -433,7 +400,7 @@
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
           <div class="testi-quote">"</div>
-          <p>Very approachable and encouraging. I don't feel the usual pressure I get with teachers. He's patient with my questions and explains things clearly until I actually understand — not just memorise.</p>
+          <p>Very approachable and encouraging. I do not feel the usual pressure I get with teachers. He is patient with my questions and explains things clearly until I actually understand.</p>
           <div class="testi-author">
             <div class="testi-avatar">S</div>
             <div class="testi-info">
@@ -442,21 +409,36 @@
             </div>
           </div>
         </div>
+
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testi-quote">"</div>
+          <p>You teach really well. You are very approachable and encouraging. I learned a lot from the way you explain and solve problems — it really changed how I approach maths.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div class="testi-info">
+              <strong>Secondary School Student</strong>
+              <span>Additional Mathematics</span>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ===== QUALIFICATIONS ===== -->
+  <!-- ===== BACKGROUND ===== -->
   <section class="qualifications section-light" id="qualifications">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <span class="section-tag">Background</span>
         <h2>Credentials &amp; Qualifications</h2>
-        <p>A strong academic foundation that underpins every lesson I give</p>
+        <p>A strong academic foundation that underpins every lesson</p>
       </div>
 
       <div class="qual-grid">
-        <!-- Academic -->
         <div class="qual-block" data-aos="fade-right" data-aos-delay="100">
           <h3 class="qual-block-title"><i class="fas fa-university"></i> Academic Qualifications</h3>
           <div class="qual-list">
@@ -464,60 +446,70 @@
               <div class="qual-logo gt">GT</div>
               <div class="qual-detail">
                 <strong>Master of Science — Industrial Engineering</strong>
-                <span>Georgia Institute of Technology</span>
+                <span>Georgia Institute of Technology · GPA 3.8 / 4.0</span>
               </div>
             </div>
             <div class="qual-item">
               <div class="qual-logo nus">NUS</div>
               <div class="qual-detail">
-                <strong>Master of Science — Supply Chain Management</strong>
-                <span>National University of Singapore</span>
+                <strong>Master of Science — Logistics &amp; Supply Chain Management</strong>
+                <span>National University of Singapore · CAP 4.9 / 5.0</span>
               </div>
             </div>
             <div class="qual-item">
               <div class="qual-logo nus">NUS</div>
               <div class="qual-detail">
-                <strong>Bachelor of Engineering — Double First Class Honours</strong>
-                <span>Industrial Engineering &amp; Financial Mathematics · NUS</span>
+                <strong>Bachelor of Engineering — First Class Honours</strong>
+                <span>Industrial &amp; Systems Engineering + Financial Mathematics · NUS · CAP 4.8 / 5.0</span>
               </div>
             </div>
             <div class="qual-item">
               <div class="qual-logo ri">RI</div>
               <div class="qual-detail">
-                <strong>Ex-Rafflesian</strong>
-                <span>A in JC Maths · A1 in E Maths · A1 in A Maths</span>
+                <strong>Raffles Institution &amp; Raffles Junior College</strong>
+                <span>A in JC Mathematics · A1 in O Level E Maths · A1 in O Level A Maths</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Certs + Languages -->
         <div class="qual-right" data-aos="fade-left" data-aos-delay="100">
           <h3 class="qual-block-title"><i class="fas fa-certificate"></i> Professional Certifications</h3>
           <div class="cert-list">
             <div class="cert-item">
+              <div class="cert-icon-wrap"><i class="fas fa-calculator"></i></div>
+              <div class="cert-detail">
+                <strong>Association of Mathematics Educators (AME)</strong>
+                <span>Member — Singapore professional body for mathematics educators</span>
+              </div>
+            </div>
+            <div class="cert-item">
               <div class="cert-icon-wrap"><i class="fas fa-chalkboard"></i></div>
               <div class="cert-detail">
-                <strong>Advanced Certificate for Learning &amp; Performance (ACLP)</strong>
-                <span>Qualified as a company trainer in technical fields</span>
+                <strong>Advanced Certificate in Learning &amp; Performance (ACLP)</strong>
+                <span>Formal adult education &amp; instructional design qualification</span>
               </div>
             </div>
             <div class="cert-item">
               <div class="cert-icon-wrap"><i class="fas fa-cogs"></i></div>
               <div class="cert-detail">
                 <strong>Lean Six Sigma Black Belt</strong>
-                <span>Advanced process improvement &amp; analytical rigour</span>
+                <span>Applied statistical rigour &amp; data-driven problem solving</span>
               </div>
             </div>
           </div>
 
           <div class="lang-block">
-            <h3 class="qual-block-title" style="margin-top: 2rem;"><i class="fas fa-language"></i> Languages</h3>
+            <h3 class="qual-block-title" style="margin-top:2rem;"><i class="fas fa-language"></i> Languages</h3>
             <div class="lang-tags">
               <span class="lang-tag">🇬🇧 English</span>
               <span class="lang-tag">🇨🇳 Mandarin</span>
             </div>
           </div>
+
+          <a href="Input/Final_Lester_Eng_Math_Tutor.pdf" target="_blank" class="btn-resume-dl">
+            <i class="fas fa-file-download"></i> Download Full Resume (PDF)
+          </a>
         </div>
       </div>
     </div>
@@ -533,23 +525,31 @@
       </div>
 
       <div class="contact-grid">
-        <!-- Left: contact cards -->
         <div class="contact-left" data-aos="fade-right" data-aos-delay="100">
-          <a href="https://wa.me/6500000000" class="contact-card whatsapp-card" target="_blank" rel="noopener">
+          <a href="https://wa.me/6587588329" class="contact-card whatsapp-card" target="_blank" rel="noopener">
             <div class="cc-icon"><i class="fab fa-whatsapp"></i></div>
             <div class="cc-content">
               <h3>WhatsApp</h3>
               <p>Fastest way to reach me. Drop a message and I'll respond promptly.</p>
-              <span class="cc-action">+65 XXXX XXXX <i class="fas fa-arrow-right"></i></span>
+              <span class="cc-action">+65 8758 8329 <i class="fas fa-arrow-right"></i></span>
             </div>
           </a>
 
-          <a href="mailto:your@email.com" class="contact-card email-card">
+          <a href="mailto:radicalsimplexity@gmail.com" class="contact-card email-card">
             <div class="cc-icon"><i class="fas fa-envelope"></i></div>
             <div class="cc-content">
               <h3>Email</h3>
               <p>For detailed enquiries about your child's learning needs and goals.</p>
-              <span class="cc-action">your@email.com <i class="fas fa-arrow-right"></i></span>
+              <span class="cc-action">radicalsimplexity@gmail.com <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/radicalsimplexitymath/" class="contact-card instagram-card" target="_blank" rel="noopener">
+            <div class="cc-icon"><i class="fab fa-instagram"></i></div>
+            <div class="cc-content">
+              <h3>Instagram</h3>
+              <p>Follow for maths tips, problem walkthroughs and student insights.</p>
+              <span class="cc-action">@radicalsimplexitymath <i class="fas fa-arrow-right"></i></span>
             </div>
           </a>
 
@@ -559,7 +559,6 @@
           </div>
         </div>
 
-        <!-- Right: enquiry form -->
         <div class="contact-right" data-aos="fade-left" data-aos-delay="100">
           <form class="enquiry-form" id="enquiryForm">
             <h3>Send an Enquiry</h3>
@@ -607,15 +606,20 @@
           <span class="logo-accent">L</span>ester <span class="logo-dot">·</span> Math
         </div>
         <p>Patient, conceptual, and personalised mathematics tutoring for Secondary and JC students across Singapore.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/radicalsimplexitymath/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6587588329" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:radicalsimplexity@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
 
       <nav class="footer-nav">
         <a href="#about">About</a>
-        <a href="#philosophy">Approach</a>
         <a href="#subjects">Subjects</a>
         <a href="#results">Results</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#qualifications">Background</a>
         <a href="#contact">Contact</a>
+        <a href="Input/Final_Lester_Eng_Math_Tutor.pdf" target="_blank">Resume PDF</a>
       </nav>
 
       <div class="footer-bottom">
@@ -624,7 +628,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
