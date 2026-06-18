@@ -275,7 +275,7 @@ section { padding: var(--section-pad); }
 @keyframes spinRing { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
 .photo-glow { position: absolute; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(245,158,11,.25) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-50%); }
 .photo-circle { position: relative; z-index: 2; width: 300px; height: 300px; border-radius: 50%; overflow: hidden; border: 4px solid rgba(245,158,11,.5); box-shadow: 0 0 0 8px rgba(245,158,11,.1), 0 20px 60px rgba(0,0,0,.4); }
-.photo-circle img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; filter: brightness(1.04) contrast(1.04) saturate(1.08); }
+.photo-circle img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: brightness(1.02) contrast(1.02) saturate(1.04); }
 
 .info-badge {
   position: absolute; z-index: 3;
@@ -300,46 +300,42 @@ section { padding: var(--section-pad); }
 .why-lester { padding: var(--section-pad); }
 
 /* Portrait row */
-.portrait-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-bottom: 3.5rem; }
+/* Persona icon cards */
+.persona-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.75rem; margin-bottom: 3.5rem; }
 
-.portrait-card {
+.persona-card {
   background: var(--white);
   border-radius: var(--r-xl);
-  overflow: hidden;
+  padding: 2.25rem 2rem 2.5rem;
   border: 1.5px solid var(--gray-200);
   box-shadow: var(--shadow-md);
   transition: var(--tr);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .9rem;
 }
-.portrait-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: var(--amber-light); }
+.persona-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: var(--amber-light); }
 
-/* Crop image to show illustration only — hide bottom descriptor text */
-.portrait-img-wrap {
-  overflow: hidden;
-  /* 4:5 container on a 1:2 image reveals top 62% — the illustration, not the text */
-  aspect-ratio: 4 / 5;
-}
-.portrait-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
+.persona-icon-wrap {
+  width: 76px; height: 76px;
+  border-radius: 50%;
+  background: var(--amber-pale);
+  color: var(--amber-dark);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.85rem;
+  border: 2px solid var(--amber-light);
+  flex-shrink: 0;
 }
 
-.portrait-text {
-  padding: 1.5rem 1.5rem 1.75rem;
-  border-top: 2px solid var(--amber-pale);
-  flex: 1;
-}
-.portrait-text h3 {
+.persona-card h3 {
   font-family: var(--font-serif);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--navy-dark);
-  margin-bottom: .6rem;
 }
-.portrait-text p {
+
+.persona-card p {
   font-size: .88rem;
   color: var(--gray-600);
   line-height: 1.75;
@@ -600,7 +596,7 @@ section { padding: var(--section-pad); }
   .badge-tl { left: -2%; top: 10%; font-size: .68rem; }
   .badge-br { right: -2%; bottom: 10%; font-size: .68rem; }
 
-  .portrait-row { grid-template-columns: 1fr; max-width: 380px; margin-inline: auto; }
+  .persona-row { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
   .why-bottom   { grid-template-columns: 1fr; }
   .subjects-grid { grid-template-columns: 1fr; }
   .results-grid  { grid-template-columns: 1fr 1fr; }
