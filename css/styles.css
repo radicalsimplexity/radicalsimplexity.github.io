@@ -1068,6 +1068,37 @@ section { padding: var(--section-pad); }
   .fg-row { grid-template-columns: 1fr; }
 }
 
+/* ===== OUTCOMES TABLE ===== */
+.outcomes-table {
+  margin: 2rem 0 1.5rem;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.1);
+}
+.ot-row {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr 2.2fr;
+  gap: 1rem;
+  padding: .9rem 1.3rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  transition: background var(--tr);
+}
+.ot-row:last-child { border-bottom: none; }
+.ot-header {
+  background: rgba(245,158,11,.12);
+  font-size: .7rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--amber-light);
+}
+.ot-row:not(.ot-header) { background: rgba(255,255,255,.04); }
+.ot-row:not(.ot-header):hover { background: rgba(255,255,255,.08); }
+.ot-level { color: rgba(255,255,255,.9); font-weight: 500; font-size: .9rem; }
+.ot-grade {
+  color: var(--amber); font-weight: 700; font-size: 1.05rem;
+  font-family: var(--font-serif); letter-spacing: .02em;
+}
+.ot-how { color: rgba(255,255,255,.65); font-size: .84rem; line-height: 1.5; }
+
 /* ===== RESPONSIVE OVERRIDES — must come after all layout rules ===== */
 @media (max-width: 900px) {
   .tracks-row     { grid-template-columns: 1fr; }
@@ -1080,6 +1111,9 @@ section { padding: var(--section-pad); }
   .tracks-row     { grid-template-columns: 1fr; }
   .manifesto-grid { grid-template-columns: 1fr; }
   .manifesto-img  { max-width: 280px; margin-inline: auto; }
+  .ot-row         { grid-template-columns: 1fr; gap: .3rem; padding: .85rem 1rem; }
+  .ot-header      { display: none; }
+  .ot-grade       { font-size: 1.15rem; }
 }
 @media (max-width: 400px) {
   .nav-logo { font-size: 0.9rem; }
