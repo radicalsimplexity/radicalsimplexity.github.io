@@ -1067,3 +1067,20 @@ section { padding: var(--section-pad); }
 @media (max-width: 480px) {
   .fg-row { grid-template-columns: 1fr; }
 }
+
+/* ===== RESPONSIVE OVERRIDES — must come after all layout rules ===== */
+@media (max-width: 900px) {
+  .tracks-row     { grid-template-columns: 1fr; }
+  .manifesto-grid { grid-template-columns: 1fr; }
+  .manifesto-img  { max-width: 340px; margin-inline: auto; }
+  .ar-row         { flex-direction: column; }
+  .nav-logo       { font-size: 1.05rem; white-space: nowrap; }
+}
+@media (max-width: 600px) {
+  .tracks-row     { grid-template-columns: 1fr; }
+  .manifesto-grid { grid-template-columns: 1fr; }
+  .manifesto-img  { max-width: 280px; margin-inline: auto; }
+}
+@media (max-width: 400px) {
+  .nav-logo { font-size: 0.9rem; }
+}
