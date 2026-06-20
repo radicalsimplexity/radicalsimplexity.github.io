@@ -631,6 +631,10 @@ section { padding: var(--section-pad); }
   .testi-grid    { grid-template-columns: 1fr; }
   .qual-grid     { grid-template-columns: 1fr; }
   .contact-grid  { grid-template-columns: 1fr; }
+  .tracks-row    { grid-template-columns: 1fr; }
+  .manifesto-grid { grid-template-columns: 1fr; }
+  .manifesto-img { max-width: 300px; margin-inline: auto; }
+  .ar-row        { flex-direction: column; }
 }
 
 @media (max-width: 600px) {
