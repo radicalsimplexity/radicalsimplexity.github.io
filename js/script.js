@@ -137,11 +137,23 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const name  = document.getElementById('fname').value.trim();
-      const phone = document.getElementById('fphone').value.trim();
-      const email = document.getElementById('femail').value.trim();
-      const level = document.getElementById('flevel').value;
-      const msg   = document.getElementById('fmsg').value.trim();
+      const name      = document.getElementById('fname').value.trim();
+      const phone     = document.getElementById('fphone').value.trim();
+      const email     = document.getElementById('femail').value.trim();
+      const level     = document.getElementById('flevel').value;
+      const grade     = document.getElementById('fgrade').value;
+      const selectedChips = [...document.querySelectorAll('.c-chip.selected input[name="challenge"]')]
+        .map(cb => {
+          if (cb.value === 'other') {
+            const txt = (otherTxt && otherTxt.value.trim()) || 'Other';
+            return txt;
+          }
+          return cb.value;
+        });
+      const challenge = selectedChips.join(', ');
+      const mode      = document.getElementById('fmode').value;
+      const urgency   = document.getElementById('furgency').value;
+      const msg       = document.getElementById('fmsg').value.trim();
 
       if (!name || !phone) {
         showFormError('Please fill in your name and phone number.');
@@ -153,9 +165,13 @@ document.addEventListener('DOMContentLoaded', () => {
         ``,
         `*Name:* ${name}`,
         `*Phone:* ${phone}`,
-        email ? `*Email:* ${email}` : null,
-        level  ? `*Level / Subject:* ${level}` : null,
-        msg    ? `*Message:*\n${msg}` : null
+        email     ? `*Email:* ${email}` : null,
+        level     ? `*Level / Subject:* ${level}` : null,
+        grade     ? `*Current Grade:* ${grade}` : null,
+        challenge ? `*Main Challenge:* ${challenge}` : null,
+        mode      ? `*Preferred Mode:* ${mode}` : null,
+        urgency   ? `*Urgency:* ${urgency}` : null,
+        msg       ? `*Message:*\n${msg}` : null
       ]
         .filter(Boolean)
         .join('\n');
@@ -178,6 +194,31 @@ document.addEventListener('DOMContentLoaded', () => {
     form.querySelector('.btn-submit').after(el);
     setTimeout(() => el.remove(), 4000);
   }
+
+  /* ===== 8. CHALLENGE CHIPS ===== */
+  const otherChk = document.getElementById('challengeOtherChk');
+  const otherTxt = document.getElementById('challengeOtherText');
+
+  document.querySelectorAll('.c-chip input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', () => {
+      cb.closest('.c-chip').classList.toggle('selected', cb.checked);
+      if (cb === otherChk && otherTxt) {
+        otherTxt.style.display = cb.checked ? 'block' : 'none';
+        if (cb.checked) otherTxt.focus();
+      }
+    });
+  });
+
+  /* ===== 9. FAQ ACCORDION ===== */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-accordion-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-accordion-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
 
   function showFormSuccess() {
     const btn = form.querySelector('.btn-submit');

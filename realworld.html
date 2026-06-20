@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real World Mathematics | Radical Simplexity</title>
+  <meta name="description" content="See how Secondary and JC mathematics connects to engineering, finance, data science, AI, and everyday decisions — with examples drawn from 20+ years of industry experience." />
+  <link rel="canonical" href="https://radicalsimplexity.com/realworld.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Page-specific overrides */
+    .rw-hero {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 55%, #1a5276 100%);
+      padding: 8rem 0 4.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .rw-hero .math-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    .rw-hero-inner { position: relative; z-index: 1; }
+    .rw-hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: .9rem; }
+    .rw-hero h1 em { color: var(--amber); font-style: italic; }
+    .rw-hero p { font-size: 1rem; color: rgba(255,255,255,.75); max-width: 600px; margin: 0 auto 1.75rem; line-height: 1.8; }
+    .rw-back-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      color: var(--amber-light); font-size: .85rem; font-weight: 600;
+      border: 1px solid rgba(245,158,11,.35); border-radius: var(--r-full);
+      padding: .45rem 1rem; transition: var(--tr);
+    }
+    .rw-back-link:hover { background: rgba(245,158,11,.1); color: var(--amber); }
+    .rw-page-section { padding: var(--section-pad); background: var(--white); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== MINIMAL NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-accent">R</span>adical <span class="logo-dot">·</span> Simplexity
+      </a>
+      <a href="index.html" class="rw-back-link" style="margin-left:auto;">
+        <i class="fas fa-arrow-left"></i> Back to main site
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <div class="rw-hero">
+    <div class="math-bg" aria-hidden="true">
+      <span class="ms ms-1">∫</span><span class="ms ms-2">∑</span><span class="ms ms-3">π</span>
+      <span class="ms ms-5">∆</span><span class="ms ms-6">∞</span><span class="ms ms-9">∂</span>
+    </div>
+    <div class="container rw-hero-inner">
+      <span class="section-tag light">Real World Mathematics</span>
+      <h1>How Mathematics <em>Comes Alive</em></h1>
+      <p>Every topic in the syllabus connects to the real world. Here is where your mathematics lives — beyond the exam hall.</p>
+      <a href="index.html#beyond" class="rw-back-link">
+        <i class="fas fa-arrow-left"></i> Back to Vision
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== INDUSTRY NOTE ===== -->
+  <section class="rw-page-section">
+    <div class="container">
+
+      <div class="rw-industry-note" data-aos="fade-up">
+        <i class="fas fa-hard-hat"></i>
+        <p>These examples are drawn directly from <strong>20+ years of industry experience</strong> as a statistician and operations research subject matter expert across engineering, manufacturing, supply chain management, and industrial systems — and brought into the classroom to make abstract concepts concrete and memorable.</p>
+      </div>
+
+      <div class="rw-grid">
+        <div class="rw-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="rw-icon"><i class="fas fa-location-arrow"></i></div>
+          <div class="rw-topic">Vectors</div>
+          <h3>Navigation &amp; Spatial Engineering</h3>
+          <ul class="rw-list">
+            <li>GPS navigation and positioning systems</li>
+            <li>Drone and aircraft flight path calculations</li>
+            <li>3D geometry in structural and mechanical engineering</li>
+            <li>Computer graphics and game physics engines</li>
+          </ul>
+        </div>
+
+        <div class="rw-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="rw-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="rw-topic">Statistics &amp; Probability</div>
+          <h3>Quality, Risk &amp; Data Science</h3>
+          <ul class="rw-list">
+            <li>Statistical Process Control (SPC) in manufacturing</li>
+            <li>Sampling theory for product quality assurance</li>
+            <li>Probability as the foundation of simulation and AI</li>
+            <li>Risk modelling and decision science in finance</li>
+          </ul>
+        </div>
+
+        <div class="rw-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="rw-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="rw-topic">Calculus</div>
+          <h3>Optimisation &amp; Supply Chain</h3>
+          <ul class="rw-list">
+            <li>Price optimisation in business and e-commerce</li>
+            <li>Inventory and stock management models</li>
+            <li>Supply chain cost minimisation and scheduling</li>
+            <li>Nonlinear programming and engineering system design</li>
+          </ul>
+        </div>
+
+        <div class="rw-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="rw-icon"><i class="fas fa-piggy-bank"></i></div>
+          <div class="rw-topic">Sequences &amp; Series (APGP)</div>
+          <h3>Finance &amp; Growth Modelling</h3>
+          <ul class="rw-list">
+            <li>Compound interest and investment growth</li>
+            <li>Loan amortisation and mortgage calculations</li>
+            <li>Financial modelling and cash flow projection</li>
+            <li>Building intuition for exponential and series behaviour</li>
+          </ul>
+        </div>
+
+        <div class="rw-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="rw-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="rw-topic">Linear Algebra &amp; Systems of Equations</div>
+          <h3>Manufacturing &amp; Process Control</h3>
+          <ul class="rw-list">
+            <li>Linear programming for production resource allocation</li>
+            <li>Advanced Process Control (APC) in semiconductor manufacturing</li>
+            <li>Supply chain network optimisation models</li>
+            <li>Systems of constraints in engineering and logistics</li>
+          </ul>
+        </div>
+
+        <div class="rw-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="rw-icon"><i class="fas fa-dice"></i></div>
+          <div class="rw-topic">Probability &amp; Simulation</div>
+          <h3>Modelling &amp; Decision Science</h3>
+          <ul class="rw-list">
+            <li>Monte Carlo simulation for complex system modelling</li>
+            <li>Event-driven simulation in operations research</li>
+            <li>Probabilistic forecasting and scenario planning</li>
+            <li>AI foundations — probability underpins machine learning</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA back to main site -->
+      <div style="text-align:center; margin-top:3.5rem;" data-aos="fade-up">
+        <p style="color:var(--gray-600); margin-bottom:1rem; font-size:.95rem;">
+          Ready to explore these connections in your own lessons?
+        </p>
+        <a href="index.html#contact" class="btn-primary">
+          <i class="fab fa-whatsapp"></i> Get in Touch
+        </a>
+        &nbsp;&nbsp;
+        <a href="index.html" class="btn-resume-dl">
+          <i class="fas fa-arrow-left"></i> Back to Main Site
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-accent">R</span>adical <span class="logo-dot">·</span> Simplexity
+        </div>
+        <p>Patient, conceptual mathematics tutoring — in-person across Singapore and online worldwide. Primarily for Secondary and JC students, with extended support for polytechnic, university, and adult learners.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/radicalsimplexitymath/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6587588329" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:radicalsimplexity@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Radical Simplexity · Private Mathematics Tuition · Singapore</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });</script>
+</body>
+</html>
